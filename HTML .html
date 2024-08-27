@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com Mídia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <div class="header-content">
+                <div class="profile-info">
+                    <img src="profile.jpg" alt="Perfil" class="profile-pic">
+                    <span class="profile-name">Nome da Pessoa</span>
+                </div>
+                <button id="callButton" title="Fazer Ligação de Áudio">📞</button>
+            </div>
+        </div>
+        <div class="messages" id="messages">
+        </div>
+        <div class="input-area">
+            <input type="file" id="fileInput" accept="image/*,video/*,audio/*" style="display:none">
+            <button id="fileButton" title="Anexar Arquivo">📎</button>
+            <input type="text" id="messageInput" placeholder="Digite uma mensagem...">
+            <button id="sendButton" title="Enviar Mensagem">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
